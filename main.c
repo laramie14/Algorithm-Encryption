@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include <Wincrypt.h>
+#include <Randomizer.h>
 #include sha256.key
 
 #define BUFSIZE 1024
@@ -11,66 +12,27 @@ printf("Drop File Here.");
 return 0;
 FILE *fopen( const char * /sha256.key, const char * w+ );
 if(sha256.key) {
-/*If true then program will ask to decrypt; checks for internal sha256.key*/
+/*If true then program will ask to decrypt; checks for internal sha256.key and compares hash*/
 printf("File is encrypted,would you like to decrypt it?\n ");
 }
+then(sha256.key) {
+	/*If manual key is supplied, then hash and decrypt*/	
 else {
 	/*Program will encrypt file*/
 	printf("File isn't encrypted, would you like to encrypt it?\n");
 }
-/*Encrypting code*/
-/*Generate random key A*/
-
-
-char *mkrndstr(size_t length) { // const size_t length, supra
-
-static char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!"; // could be const
-char *randomString;
-
-if (length) {
-    randomString = malloc(length +1); // sizeof(char) == 1, cf. C99
-
-    if (randomString) {
-        int l = (int) (sizeof(charset) -1); // (static/global, could be const or #define SZ, would be even better)
-        int key;  // one-time instantiation (static/global would be even better)
-        for (int n = 0;n < length;n++) {        
-            key = rand() % l;   // no instantiation, just assignment, no overhead from sizeof
-            randomString[n] = charset[key];
-        }
-
-        randomString[length] = '\0';
-    }
-}
-
-return randomString;
+int Encryption(1); {
+	Randomizer.h
 }
 return 0;
 
 /*Return file with Key A*/
 /*Generate random key B*/
-char *mkrndstr(size_t length) { // const size_t length, supra
-
-static char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!"; // could be const
-char *randomString;
-
-if (length) {
-    randomString = malloc(length +1); // sizeof(char) == 1, cf. C99
-
-    if (randomString) {
-        int l = (int) (sizeof(charset) -1); // (static/global, could be const or #define SZ, would be even better)
-        int key;  // one-time instantiation (static/global would be even better)
-        for (int n = 0;n < length;n++) {        
-            key = rand() % l;   // no instantiation, just assignment, no overhead from sizeof
-            randomString[n] = charset[key];
-        }
-
-        randomString[length] = '\0';
-    }
-}
-
-return randomString;
+	int Encryption(2); {
+	Randomizer.h
 }
 return 0;
+	/*Return file with Key B*/
 
 /*Generate MD5*/
 
