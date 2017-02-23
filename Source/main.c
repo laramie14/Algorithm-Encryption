@@ -15,24 +15,28 @@ if(sha256.key) {
 /*If true then program will ask to decrypt; checks for internal sha256.key and compares hash*/
 printf("File is encrypted,would you like to decrypt it?\n ");
 }
-then(sha256.key) {
+	if(sha256.key) {
 	/*If manual key is supplied, then hash and decrypt*/	
-else {
+		
+else (Randomize);{
 	/*Program will encrypt file*/
 	printf("File isn't encrypted, would you like to encrypt it?\n");
 }
-int Encryption(1); {
+int Randomize(1); {
 	Randomizer.h
 }
 return 0;
 
 /*Return file with Key A*/
 /*Generate random key B*/
-	int Encryption(2); {
+	int Randomize(2); {
 	Randomizer.h
 }
 return 0;
 	/*Return file with Key B*/
+int Ecryption(3){
+	
+		
 
 /*Generate MD5*/
 
